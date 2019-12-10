@@ -1,2 +1,4 @@
-# rate-my-plate
-A PWA that helps you rate your plate
+# Rate My Plate
+
+Team: aua2, dhickey3, justing4, nac7, varnits2\
+PM: zac2
