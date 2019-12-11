@@ -25,6 +25,9 @@ function analyze() {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
             el('result-label').innerHTML = `Result = ${response['result']}`;
+            if (response['result'].localeCompare('pizza') == 0) {
+                el('rating-label').innerHTML = `Rating = ${0.4}`;
+            }
         }
         el('analyze-button').innerHTML = 'Analyze';
     }
