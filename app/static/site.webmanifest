@@ -1,7 +1,7 @@
 {
     "name": "Rate My Plate",
     "short_name": "RMP",
-    "start_url": "https://rate-my-plate.onrender.com/static/index.html",
+    "start_url": "https://rate-my-plate.onrender.com/index.html",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

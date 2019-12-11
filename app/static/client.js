@@ -24,9 +24,15 @@ function analyze() {
     xhr.onload = function(e) {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
-            el('result-label').innerHTML = `Result = ${response['result']}`;
+            el('result-label').innerHTML = `I think this is a picture of ${response['result']}`;
             if (response['result'].localeCompare('pizza') == 0) {
-                el('rating-label').innerHTML = `Rating = ${0.4}`;
+                el('rating-label').innerHTML = `Based on your diet, your plate is rated at ${0.6}`;
+            }
+            if (response['result'].localeCompare('red_velvet_cake') == 0) {
+                el('rating-label').innerHTML = `Based on your diet, your plate is rated at ${0.4}`;
+            }
+            if (response['result'].localeCompare('cup_cakes') == 0) {
+                el('rating-label').innerHTML = `Based on your diet, your plate is rated at ${0.3}`;
             }
         }
         el('analyze-button').innerHTML = 'Analyze';
